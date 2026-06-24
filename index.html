@@ -1,0 +1,2290 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Meta tags esenciales para SEO y rendimiento -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Arca2 C.A. - Arquitectura y Construcción en San Cristóbal, Edo. Táchira. Especialistas en obras civiles, urbanismo e industriales.">
+    <meta name="keywords" content="construcción, arquitectura, obras civiles, urbanismo, San Cristóbal, Táchira, Venezuela">
+    <meta name="author" content="Arca2 C.A.">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    
+    <!-- Open Graph para redes sociales - Mejora el sharing en redes -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.arca2ca.com/">
+    <meta property="og:title" content="Arca2 C.A. | Arquitectura y Construcción">
+    <meta property="og:description" content="Expertos en construcción, urbanismo y obras industriales en San Cristóbal">
+    <meta property="og:image" content="img/LogoArca2ca.png">
+    <meta property="og:locale" content="es_VE">
+    
+    <!-- Twitter Card - Optimización para Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Arca2 C.A. | Arquitectura y Construcción">
+    <meta name="twitter:description" content="Expertos en construcción, urbanismo y obras industriales">
+    <meta name="twitter:image" content="img/LogoArca2ca.png">
+    
+    <title>Arca2 C.A. | Arquitectura y Construcción</title>
+    
+    <!-- Preconnect para mejorar performance de carga de recursos externos -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://images.unsplash.com" crossorigin>
+    
+    <!-- DNS Prefetch para dominios que se usarán dinámicamente -->
+    <link rel="dns-prefetch" href="https://www.google-analytics.com">
+    
+    <!-- Font Awesome con integrity para seguridad SRI -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+          integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+          crossorigin="anonymous" referrerpolicy="no-referrer">
+    
+    <!-- Google Fonts con display=swap para evitar FOIT -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;600&display=swap" 
+          rel="stylesheet" media="print" onload="this.media='all'">
+    
+    <!-- Critical CSS inline para Above-the-fold content -->
+    <style>
+        /* CSS Custom Properties - Variables globales para mantenimiento fácil */
+        :root {
+            --azul-claro: #4A90E2;
+            --azul-oscuro: #2C5F8D;
+            --azul-medio: #3A7BC8;
+            --naranja: #F5A623;
+            --naranja-oscuro: #E0961C;
+            --naranja-claro: #FFB347;
+            --blanco: #FFFFFF;
+            --gris-claro: #F5F7FA;
+            --gris-medio: #E8ECF1;
+            --gris-oscuro: #333333;
+            --texto: #2C3E50;
+            --error: #e74c3c;
+            --success: #27ae60;
+            --transition-speed: 0.3s;
+            --transition-smooth: cubic-bezier(0.4, 0, 0.2, 1);
+            --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+            --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+            --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+            --radius-sm: 0.375rem;
+            --radius-md: 0.5rem;
+            --radius-lg: 1rem;
+            --radius-full: 9999px;
+        }
+
+        /* Reset moderno basado en Modern CSS Reset */
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Configuración base del documento */
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+            -webkit-text-size-adjust: 100%;
+            text-rendering: optimizeLegibility;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        body {
+            font-family: 'Open Sans', system-ui, -apple-system, sans-serif;
+            color: var(--texto);
+            line-height: 1.6;
+            overflow-x: hidden;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Tipografía semántica con clamp() para responsive fluido */
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            line-height: 1.2;
+            text-wrap: balance;
+        }
+
+        /* Imágenes responsivas por defecto */
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* Links sin decoración por defecto */
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* Botones con cursor pointer y sin estilos por defecto */
+        button {
+            font-family: inherit;
+            cursor: pointer;
+            border: none;
+            background: none;
+        }
+
+        /* Utilidad para screen readers - Accesibilidad WCAG */
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border-width: 0;
+        }
+
+        /* Focus visible moderno - Mejor que :focus tradicional */
+        :focus-visible {
+            outline: 3px solid var(--naranja);
+            outline-offset: 2px;
+        }
+
+        /* HEADER CON ONDAS SENOIDALES */
+        header {
+            background: var(--blanco);
+            position: relative;
+            top: 0;
+            z-index: 1000;
+            box-shadow: var(--shadow-md);
+        }
+
+        /* Onda sinusoidal superior del header - SVG pattern */
+        .header-wave-top {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+            line-height: 0;
+            transform: rotate(180deg);
+        }
+
+        .header-wave-top svg {
+            position: relative;
+            display: block;
+            width: calc(100% + 1.3px);
+            height: 60px;
+        }
+
+        .header-wave-top .shape-fill {
+            fill: var(--blanco);
+        }
+
+        /* Contenedor principal del header con flexbox */
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 2rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Logo con dimensiones fijas para evitar CLS */
+        .logo {
+            height: 70px;
+            width: auto;
+            object-fit: contain;
+            flex-shrink: 0;
+        }
+
+        /* Navegación principal */
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Links de navegación con transiciones suaves */
+        nav a {
+            color: var(--gris-oscuro);
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: color var(--transition-speed) var(--transition-smooth);
+            position: relative;
+            padding: 0.5rem 0;
+            display: inline-block;
+        }
+
+        /* Efecto hover y focus con cambio de color a azul */
+        nav a:hover,
+        nav a:focus {
+            color: var(--azul-claro);
+        }
+
+        /* Línea animada bajo el link - Efecto de selección */
+        nav a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 3px;
+            background: linear-gradient(90deg, var(--azul-claro), var(--naranja));
+            transition: width var(--transition-speed) var(--transition-smooth);
+            border-radius: var(--radius-full);
+        }
+
+        /* Expansión de la línea al hacer hover/focus */
+        nav a:hover::after,
+        nav a:focus::after {
+            width: 100%;
+        }
+
+        /* Estado activo del menú - Resaltado con gradiente */
+        nav a.active {
+            color: var(--azul-oscuro);
+            font-weight: 700;
+        }
+
+        nav a.active::after {
+            width: 100%;
+            background: linear-gradient(90deg, var(--naranja), var(--azul-claro));
+        }
+
+        /* Botón menú móvil - Hamburger */
+        .menu-toggle {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 5px;
+            padding: 0.5rem;
+            background: transparent;
+            border: 2px solid transparent;
+            border-radius: var(--radius-sm);
+            transition: border-color var(--transition-speed);
+        }
+
+        .menu-toggle:hover,
+        .menu-toggle:focus {
+            border-color: var(--azul-claro);
+        }
+
+        /* Líneas del hamburger menu */
+        .menu-toggle span {
+            width: 25px;
+            height: 3px;
+            background: var(--azul-claro);
+            transition: all 0.3s var(--transition-smooth);
+            border-radius: var(--radius-full);
+        }
+
+        /* Animación del hamburger a X */
+        .menu-toggle.active span:nth-child(1) {
+            transform: rotate(45deg) translate(5px, 5px);
+        }
+
+        .menu-toggle.active span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .menu-toggle.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(7px, -6px);
+        }
+
+        /* HERO SECTION CON ONDAS */
+        .hero {
+            margin-top: 0;
+            min-height: 90vh;
+            background: linear-gradient(135deg, rgba(74, 144, 226, 0.85), rgba(245, 166, 35, 0.75)), 
+                        url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') center/cover no-repeat fixed;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: var(--blanco);
+            position: relative;
+            padding: 6rem 2rem 4rem;
+            overflow: hidden;
+        }
+
+        /* Onda decorativa inferior del hero */
+        .hero-wave {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+            line-height: 0;
+        }
+
+        .hero-wave svg {
+            position: relative;
+            display: block;
+            width: calc(100% + 1.3px);
+            height: 100px;
+        }
+
+        .hero-wave .shape-fill {
+            fill: var(--gris-claro);
+        }
+
+        /* Contenido del hero con animaciones */
+        .hero-content h1 {
+            font-size: clamp(2.5rem, 6vw, 4rem);
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            animation: fadeInUp 1s ease var(--transition-smooth);
+        }
+
+        .hero-content p {
+            font-size: clamp(1.2rem, 2.5vw, 1.8rem);
+            margin-bottom: 2.5rem;
+            animation: fadeInUp 1s ease 0.2s both var(--transition-smooth);
+            font-weight: 300;
+        }
+
+        /* Botones principales con gradiente */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            padding: 1rem 2.5rem;
+            background: linear-gradient(135deg, var(--naranja), var(--naranja-oscuro));
+            color: var(--blanco);
+            border-radius: var(--radius-full);
+            font-weight: 700;
+            transition: all var(--transition-speed) var(--transition-smooth);
+            border: 2px solid transparent;
+            font-size: 1rem;
+            animation: fadeInUp 1s ease 0.4s both var(--transition-smooth);
+            box-shadow: var(--shadow-md);
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Efecto hover en botones */
+        .btn:hover,
+        .btn:focus {
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-xl);
+        }
+
+        /* Efecto ripple en botones */
+        .btn::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.3);
+            transform: translate(-50%, -50%);
+            transition: width 0.6s, height 0.6s;
+        }
+
+        .btn:hover::before {
+            width: 300px;
+            height: 300px;
+        }
+
+        /* Botón outline con borde blanco */
+        .btn-outline {
+            background: transparent;
+            border: 2px solid var(--blanco);
+            margin-left: 1rem;
+        }
+
+        .btn-outline:hover,
+        .btn-outline:focus {
+            background: var(--blanco);
+            color: var(--azul-claro);
+        }
+
+        /* SECCIONES GENERALES */
+        section {
+            padding: 5rem 2rem;
+            position: relative;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Títulos de sección con línea decorativa */
+        .section-title {
+            text-align: center;
+            font-size: clamp(2rem, 4vw, 2.8rem);
+            color: var(--azul-oscuro);
+            margin-bottom: 3rem;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 100px;
+            height: 4px;
+            background: linear-gradient(90deg, var(--azul-claro), var(--naranja));
+            margin: 1rem auto;
+            border-radius: var(--radius-full);
+        }
+
+        /* NOSOTROS - Grid layout */
+        .nosotros {
+            background: var(--gris-claro);
+        }
+
+        .nosotros-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        /* Imágenes con sombra y bordes redondeados */
+        .nosotros-img {
+            position: relative;
+            overflow: hidden;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .nosotros-img img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            transition: transform 0.5s var(--transition-smooth);
+        }
+
+        .nosotros-img:hover img {
+            transform: scale(1.05);
+        }
+
+        .nosotros-content h3 {
+            color: var(--azul-oscuro);
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .nosotros-content p {
+            margin-bottom: 1rem;
+            text-align: justify;
+            hyphens: auto;
+        }
+
+        /* Stats con grid */
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .stat-item {
+            text-align: center;
+            padding: 1.5rem;
+            background: var(--blanco);
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-md);
+            transition: transform var(--transition-speed);
+        }
+
+        .stat-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .stat-item h4 {
+            color: var(--naranja);
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        /* SERVICIOS - Cards con hover effects */
+        .servicios-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .servicio-card {
+            background: var(--blanco);
+            padding: 2.5rem;
+            border-radius: var(--radius-lg);
+            text-align: center;
+            box-shadow: var(--shadow-md);
+            transition: all var(--transition-speed) var(--transition-smooth);
+            border-bottom: 4px solid var(--azul-claro);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .servicio-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, var(--azul-claro), var(--naranja));
+            opacity: 0;
+            transition: opacity var(--transition-speed);
+            z-index: 0;
+        }
+
+        .servicio-card:hover::before {
+            opacity: 0.05;
+        }
+
+        .servicio-card > * {
+            position: relative;
+            z-index: 1;
+        }
+
+        .servicio-card:hover,
+        .servicio-card:focus-within {
+            transform: translateY(-10px);
+            border-bottom-color: var(--naranja);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .servicio-card i {
+            font-size: 3rem;
+            color: var(--azul-claro);
+            margin-bottom: 1rem;
+            transition: color var(--transition-speed);
+        }
+
+        .servicio-card:hover i {
+            color: var(--naranja);
+        }
+
+        .servicio-card h3 {
+            color: var(--azul-oscuro);
+            margin-bottom: 1rem;
+        }
+
+        /* PROYECTOS - Grid responsive */
+        .proyectos {
+            background: var(--blanco);
+        }
+
+        .proyectos-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+        }
+
+        .proyecto-card {
+            background: var(--blanco);
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-md);
+            transition: all var(--transition-speed) var(--transition-smooth);
+        }
+
+        .proyecto-card:hover,
+        .proyecto-card:focus-within {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .proyecto-img {
+            height: 280px;
+            overflow: hidden;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .proyecto-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s var(--transition-smooth);
+        }
+
+        .proyecto-card:hover .proyecto-img img,
+        .proyecto-card:focus-within .proyecto-img img {
+            transform: scale(1.1);
+        }
+
+        /* Overlay con icono de zoom */
+        .proyecto-overlay {
+            position: absolute;
+            inset: 0;
+            background: rgba(74, 144, 226, 0.9);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity var(--transition-speed);
+        }
+
+        .proyecto-img:hover .proyecto-overlay,
+        .proyecto-img:focus-within .proyecto-overlay {
+            opacity: 1;
+        }
+
+        .proyecto-overlay i {
+            color: var(--blanco);
+            font-size: 3rem;
+            transform: scale(0);
+            transition: transform 0.3s var(--transition-smooth);
+        }
+
+        .proyecto-img:hover .proyecto-overlay i {
+            transform: scale(1);
+        }
+
+        .proyecto-info {
+            padding: 1.5rem;
+        }
+
+        .proyecto-info h3 {
+            color: var(--azul-oscuro);
+            margin-bottom: 0.5rem;
+        }
+
+        .proyecto-info p {
+            color: #666;
+            font-size: 0.95rem;
+            margin-bottom: 1rem;
+        }
+
+        .whatsapp-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: #25D366;
+            font-weight: 600;
+            transition: all var(--transition-speed);
+            padding: 0.5rem 1rem;
+            background: rgba(37, 211, 102, 0.1);
+            border-radius: var(--radius-md);
+        }
+
+        .whatsapp-link:hover,
+        .whatsapp-link:focus {
+            color: #128C7E;
+            background: rgba(37, 211, 102, 0.2);
+            transform: translateX(5px);
+        }
+
+        /* MODAL - Galería de proyectos */
+        .modal {
+            display: none;
+            position: fixed;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.95);
+            z-index: 2000;
+            overflow-y: auto;
+            padding: 2rem 1rem;
+            backdrop-filter: blur(5px);
+        }
+
+        .modal[aria-hidden="false"] {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .modal-content {
+            background: var(--blanco);
+            max-width: 900px;
+            width: 100%;
+            margin: 0 auto;
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            position: relative;
+            box-shadow: var(--shadow-xl);
+            animation: modalSlideIn 0.3s var(--transition-smooth);
+        }
+
+        @keyframes modalSlideIn {
+            from {
+                opacity: 0;
+                transform: translateY(-50px) scale(0.9);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background: var(--naranja);
+            color: var(--blanco);
+            width: 45px;
+            height: 45px;
+            border-radius: var(--radius-full);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            z-index: 10;
+            transition: all var(--transition-speed);
+            box-shadow: var(--shadow-md);
+        }
+
+        .modal-close:hover,
+        .modal-close:focus {
+            transform: rotate(90deg) scale(1.1);
+            background: var(--naranja-oscuro);
+        }
+
+        .modal-header {
+            padding: 2.5rem 2rem;
+            background: linear-gradient(135deg, var(--azul-claro), var(--naranja));
+            color: var(--blanco);
+        }
+
+        .modal-header h2 {
+            margin-bottom: 0.5rem;
+            font-size: 2rem;
+        }
+
+        .modal-body {
+            padding: 2rem;
+        }
+
+        /* Slider de imágenes */
+        .slider-container {
+            position: relative;
+            margin-bottom: 2rem;
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+        }
+
+        .slider {
+            display: flex;
+            transition: transform 0.5s var(--transition-smooth);
+        }
+
+        .slide {
+            min-width: 100%;
+            height: 450px;
+        }
+
+        .slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .slider-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(255, 255, 255, 0.95);
+            color: var(--azul-oscuro);
+            border: none;
+            width: 50px;
+            height: 50px;
+            border-radius: var(--radius-full);
+            font-size: 1.5rem;
+            transition: all var(--transition-speed);
+            z-index: 5;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: var(--shadow-md);
+        }
+
+        .slider-btn:hover,
+        .slider-btn:focus {
+            background: var(--naranja);
+            color: var(--blanco);
+            transform: translateY(-50%) scale(1.1);
+        }
+
+        .slider-btn.prev { left: 1rem; }
+        .slider-btn.next { right: 1rem; }
+
+        .slide-counter {
+            text-align: center;
+            margin-top: 1rem;
+            color: var(--azul-oscuro);
+            font-weight: 700;
+            font-size: 1.1rem;
+        }
+
+        /* TESTIMONIOS - Slider automático */
+        .testimonios {
+            background: linear-gradient(135deg, var(--gris-claro), var(--blanco));
+        }
+
+        .testimonios-slider {
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .testimonios-track {
+            display: flex;
+            transition: transform 0.5s var(--transition-smooth);
+        }
+
+        .testimonio {
+            min-width: 100%;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .testimonio-img {
+            width: 120px;
+            height: 120px;
+            border-radius: var(--radius-full);
+            object-fit: cover;
+            margin: 0 auto 1.5rem;
+            border: 4px solid var(--naranja);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .testimonio p {
+            font-size: 1.3rem;
+            font-style: italic;
+            margin-bottom: 1.5rem;
+            color: var(--texto);
+            line-height: 1.8;
+        }
+
+        .testimonio h4 {
+            color: var(--azul-oscuro);
+            margin-bottom: 0.25rem;
+        }
+
+        .testimonio span {
+            color: var(--naranja);
+            font-weight: 600;
+        }
+
+        /* CONTACTO - Gradiente azul-naranja */
+        .contacto {
+            background: linear-gradient(135deg, var(--azul-claro), var(--azul-oscuro));
+            color: var(--blanco);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .contacto::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -20%;
+            width: 600px;
+            height: 600px;
+            background: rgba(245, 166, 35, 0.1);
+            border-radius: 50%;
+        }
+
+        .contacto .section-title {
+            color: var(--blanco);
+        }
+
+        .contacto .section-title::after {
+            background: linear-gradient(90deg, var(--blanco), var(--naranja));
+        }
+
+        .contacto-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .contacto-info h3 {
+            margin-bottom: 2rem;
+            font-size: 1.8rem;
+        }
+
+        .contacto-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1.2rem;
+            margin-bottom: 2rem;
+            padding: 1rem;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: var(--radius-md);
+            transition: all var(--transition-speed);
+        }
+
+        .contacto-item:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateX(5px);
+        }
+
+        .contacto-item i {
+            font-size: 1.8rem;
+            color: var(--naranja);
+            margin-top: 0.25rem;
+        }
+
+        .contacto-item div h4 {
+            margin-bottom: 0.5rem;
+            font-size: 1.2rem;
+        }
+
+        .contacto-item a {
+            color: var(--blanco);
+            transition: color var(--transition-speed);
+            font-weight: 500;
+        }
+
+        .contacto-item a:hover,
+        .contacto-item a:focus {
+            color: var(--naranja);
+        }
+
+        /* FORMULARIO - Validación visual */
+        .form-group {
+            margin-bottom: 1.5rem;
+            position: relative;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            font-size: 0.95rem;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 1rem;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            border-radius: var(--radius-md);
+            font-family: inherit;
+            font-size: 1rem;
+            transition: all var(--transition-speed);
+            background: rgba(255, 255, 255, 0.95);
+            color: var(--texto);
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--naranja);
+            box-shadow: 0 0 0 3px rgba(245, 166, 35, 0.3);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 140px;
+        }
+
+        /* Mensajes de error */
+        .error-message {
+            color: var(--blanco);
+            background: rgba(231, 76, 60, 0.95);
+            padding: 0.6rem 1rem;
+            border-radius: var(--radius-sm);
+            font-size: 0.85rem;
+            margin-top: 0.5rem;
+            display: none;
+            animation: shake 0.5s;
+        }
+
+        @keyframes shake {
+            0%, 100% { transform: translateX(0); }
+            25% { transform: translateX(-5px); }
+            75% { transform: translateX(5px); }
+        }
+
+        .form-group.error .error-message {
+            display: block;
+        }
+
+        .form-group.error input,
+        .form-group.error select,
+        .form-group.error textarea {
+            border-color: var(--error);
+        }
+
+        /* FOOTER CON ONDAS */
+        footer {
+            background: var(--gris-oscuro);
+            color: var(--blanco);
+            padding: 0;
+            position: relative;
+            margin-top: auto;
+        }
+
+        /* Onda sinusoidal superior del footer */
+        .footer-wave {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+            line-height: 0;
+        }
+
+        .footer-wave svg {
+            position: relative;
+            display: block;
+            width: calc(100% + 1.3px);
+            height: 80px;
+        }
+
+        .footer-wave .shape-fill {
+            fill: var(--gris-oscuro);
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4rem 2rem 2rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .footer-section h3 {
+            color: var(--naranja);
+            margin-bottom: 1.5rem;
+            font-size: 1.4rem;
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 0.75rem;
+        }
+
+        .footer-section a {
+            color: var(--blanco);
+            transition: all var(--transition-speed);
+            display: inline-block;
+        }
+
+        .footer-section a:hover,
+        .footer-section a:focus {
+            color: var(--naranja);
+            transform: translateX(5px);
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .social-links a {
+            width: 45px;
+            height: 45px;
+            border-radius: var(--radius-full);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--blanco);
+            font-size: 1.3rem;
+            transition: all var(--transition-speed) var(--transition-smooth);
+            box-shadow: var(--shadow-md);
+        }
+
+        .social-links a:hover,
+        .social-links a:focus {
+            transform: translateY(-5px) scale(1.1);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .social-links .instagram { background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); }
+        .social-links .facebook { background: linear-gradient(135deg, #1877F2, #0d5cb6); }
+        .social-links .linkedin { background: linear-gradient(135deg, #0A66C2, #074d8a); }
+        .social-links .youtube { background: linear-gradient(135deg, #FF0000, #cc0000); }
+        .social-links .whatsapp { background: linear-gradient(135deg, #25D366, #128C7E); }
+
+        .footer-bottom {
+            text-align: center;
+            padding: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #999;
+            font-size: 0.9rem;
+        }
+
+        /* ANIMACIONES */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* RESPONSIVE DESIGN - Mobile First */
+        @media (max-width: 968px) {
+            .menu-toggle {
+                display: flex;
+            }
+
+            nav ul {
+                position: fixed;
+                top: 90px;
+                left: -100%;
+                width: 100%;
+                height: calc(100vh - 90px);
+                background: linear-gradient(135deg, var(--blanco), var(--gris-claro));
+                flex-direction: column;
+                align-items: center;
+                padding-top: 3rem;
+                transition: left var(--transition-speed) var(--transition-smooth);
+                gap: 0;
+                box-shadow: var(--shadow-xl);
+            }
+
+            nav ul.active {
+                left: 0;
+            }
+
+            nav ul li {
+                margin: 1.5rem 0;
+                width: 100%;
+                text-align: center;
+            }
+
+            nav a {
+                font-size: 1.3rem;
+                padding: 1rem 2rem;
+                display: block;
+            }
+
+            .nosotros-grid,
+            .contacto-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .stats {
+                grid-template-columns: 1fr;
+            }
+
+            .btn-outline {
+                margin-left: 0;
+                margin-top: 1rem;
+            }
+
+            .hero-content h1 {
+                font-size: clamp(2rem, 8vw, 3rem);
+            }
+        }
+
+        @media (max-width: 640px) {
+            .proyectos-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .slide {
+                height: 300px;
+            }
+
+            .header-container {
+                padding: 1rem;
+            }
+
+            .logo {
+                height: 55px;
+            }
+        }
+
+        /* Reducir animaciones para accesibilidad */
+        @media (prefers-reduced-motion: reduce) {
+            *, *::before, *::after {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+                scroll-behavior: auto !important;
+            }
+        }
+
+        /* Dark mode support - Modern CSS */
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --gris-claro: #1a1a2e;
+                --texto: #e4e4e7;
+            }
+        }
+
+        /* Loading state */
+        .loading {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 3px solid rgba(255,255,255,.3);
+            border-radius: 50%;
+            border-top-color: var(--blanco);
+            animation: spin 1s ease-in-out infinite;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        /* Skip to content - Accesibilidad */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: var(--naranja);
+            color: var(--blanco);
+            padding: 0.75rem 1.5rem;
+            z-index: 100;
+            border-radius: 0 0 var(--radius-md) 0;
+            font-weight: 600;
+            transition: top 0.3s;
+        }
+
+        .skip-link:focus {
+            top: 0;
+        }
+
+        /* Print styles */
+        @media print {
+            header, footer, .hero-wave, .footer-wave {
+                display: none;
+            }
+            
+            .modal {
+                display: none !important;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Skip to content - Mejora de accesibilidad para lectores de pantalla -->
+    <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
+
+    <!-- HEADER CON ONDAS SENOIDALES -->
+    <header id="header" role="banner">
+        <!-- Onda SVG decorativa superior - Patrón sinusoidal en blanco -->
+        <div class="header-wave-top" aria-hidden="true">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" 
+                      class="shape-fill"></path>
+            </svg>
+        </div>
+        
+        <div class="header-container">
+            <!-- Logo de la empresa - Ruta corregida a img/LogoArca2ca.png -->
+            <img src="img/LogoArca2ca.png" alt="Arca2 C.A. - Arquitectura y Construcción" class="logo" width="200" height="70" loading="eager" fetchpriority="high">
+            
+            <!-- Botón menú móvil con animación hamburger -->
+            <button class="menu-toggle" onclick="toggleMenu()" aria-label="Abrir menú de navegación" aria-expanded="false" aria-controls="navMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <!-- Navegación principal con ARIA labels -->
+            <nav role="navigation" aria-label="Menú principal">
+                <ul id="navMenu">
+                    <li><a href="#inicio" class="nav-link active">Home</a></li>
+                    <li><a href="#nosotros" class="nav-link">Nosotros</a></li>
+                    <li><a href="#servicios" class="nav-link">Servicios</a></li>
+                    <li><a href="#proyectos" class="nav-link">Proyectos</a></li>
+                    <li><a href="#contacto" class="nav-link">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <!-- HERO SECTION CON ONDAS Y GRADIENTE -->
+        <section class="hero" id="inicio" aria-label="Bienvenida">
+            <div class="hero-content">
+                <h1>Construyendo el Futuro</h1>
+                <p>Arquitectura y Construcción de Excelencia en San Cristóbal</p>
+                <div>
+                    <a href="#proyectos" class="btn">
+                        <i class="fas fa-building" aria-hidden="true"></i> Ver Proyectos
+                    </a>
+                    <a href="#contacto" class="btn btn-outline">
+                        <i class="fas fa-envelope" aria-hidden="true"></i> Contáctanos
+                    </a>
+                </div>
+            </div>
+            <!-- Onda sinusoidal inferior del hero - Transición a gris claro -->
+            <div class="hero-wave" aria-hidden="true">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" 
+                          class="shape-fill"></path>
+                </svg>
+            </div>
+        </section>
+
+        <!-- SECCIÓN NOSOTROS -->
+        <section class="nosotros" id="nosotros" aria-labelledby="nosotros-title">
+            <div class="container">
+                <h2 class="section-title" id="nosotros-title">Nosotros</h2>
+                <div class="nosotros-grid">
+                    <div class="nosotros-img">
+                        <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                             alt="Obras de construcción civil" 
+                             loading="lazy" 
+                             width="800" 
+                             height="400"
+                             decoding="async">
+                    </div>
+                    <div class="nosotros-content">
+                        <h3>Expertos en Construcción y Urbanismo</h3>
+                        <p>En Arca2 C.A. somos una empresa líder en el sector de la construcción, especializada en obras civiles, urbanismo e industriales. Con años de experiencia en el mercado, nos hemos consolidado como referentes en San Cristóbal y el estado Táchira.</p>
+                        <p>Nuestro compromiso es brindar soluciones integrales que superen las expectativas de nuestros clientes, combinando innovación, calidad y cumplimiento en cada proyecto que emprendemos.</p>
+                        
+                        <div class="stats">
+                            <div class="stat-item">
+                                <h4>150+</h4>
+                                <p>Proyectos Completados</p>
+                            </div>
+                            <div class="stat-item">
+                                <h4>15</h4>
+                                <p>Años de Experiencia</p>
+                            </div>
+                            <div class="stat-item">
+                                <h4>100%</h4>
+                                <p>Clientes Satisfechos</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="nosotros-grid" style="margin-top: 4rem;">
+                    <div class="nosotros-img">
+                        <!-- Imagen corregida: obra industrial y urbanística que se visualiza correctamente -->
+                        <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                             alt="Obras industriales y de urbanismo" 
+                             loading="lazy" 
+                             width="800" 
+                             height="400"
+                             decoding="async">
+                    </div>
+                    <div class="nosotros-content">
+                        <h3>Obras Industriales y Urbanísticas</h3>
+                        <p>Contamos con un equipo multidisciplinario de arquitectos, ingenieros y técnicos altamente calificados que garantizan la ejecución de proyectos de gran envergadura.</p>
+                        <p>Desde la planificación hasta la entrega final, supervisamos cada etapa del proceso constructivo asegurando los más altos estándares de calidad y seguridad.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN SERVICIOS -->
+        <section class="servicios" id="servicios" aria-labelledby="servicios-title">
+            <div class="container">
+                <h2 class="section-title" id="servicios-title">Nuestros Servicios</h2>
+                <div class="servicios-grid">
+                    <article class="servicio-card">
+                        <i class="fas fa-building" aria-hidden="true"></i>
+                        <h3>Construcción Civil</h3>
+                        <p>Ejecución de obras residenciales, comerciales e institucionales con los más altos estándares de calidad.</p>
+                    </article>
+                    <article class="servicio-card">
+                        <i class="fas fa-drafting-compass" aria-hidden="true"></i>
+                        <h3>Diseño Arquitectónico</h3>
+                        <p>Proyectos arquitectónicos innovadores y funcionales adaptados a las necesidades del cliente.</p>
+                    </article>
+                    <article class="servicio-card">
+                        <i class="fas fa-industry" aria-hidden="true"></i>
+                        <h3>Obras Industriales</h3>
+                        <p>Construcción de naves industriales, plantas de producción y centros logísticos.</p>
+                    </article>
+                    <article class="servicio-card">
+                        <i class="fas fa-road" aria-hidden="true"></i>
+                        <h3>Urbanismo</h3>
+                        <p>Desarrollo de proyectos urbanísticos, vías de acceso y espacios públicos.</p>
+                    </article>
+                    <article class="servicio-card">
+                        <i class="fas fa-tools" aria-hidden="true"></i>
+                        <h3>Remodelaciones</h3>
+                        <p>Transformación y renovación de espacios existentes con diseño moderno y funcional.</p>
+                    </article>
+                    <article class="servicio-card">
+                        <i class="fas fa-clipboard-check" aria-hidden="true"></i>
+                        <h3>Supervisión de Obras</h3>
+                        <p>Control y seguimiento técnico de proyectos para garantizar calidad y cumplimiento.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN PROYECTOS -->
+        <section class="proyectos" id="proyectos" aria-labelledby="proyectos-title">
+            <div class="container">
+                <h2 class="section-title" id="proyectos-title">Nuestros Proyectos</h2>
+                <div class="proyectos-grid" id="proyectosGrid" role="list">
+                    <!-- Los proyectos se generan dinámicamente con JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- MODAL DE PROYECTO - Galería interactiva -->
+        <div id="proyectoModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-hidden="true">
+            <div class="modal-content">
+                <button class="modal-close" onclick="closeModal()" aria-label="Cerrar modal">&times;</button>
+                <div class="modal-header">
+                    <h2 id="modalTitle">Título del Proyecto</h2>
+                    <p id="modalDesc">Descripción del proyecto</p>
+                </div>
+                <div class="modal-body">
+                    <div class="slider-container">
+                        <button class="slider-btn prev" onclick="changeSlide(-1)" aria-label="Imagen anterior">&#10094;</button>
+                        <div class="slider" id="projectSlider" role="region" aria-label="Galería de imágenes">
+                            <!-- Slides generados dinámicamente -->
+                        </div>
+                        <button class="slider-btn next" onclick="changeSlide(1)" aria-label="Imagen siguiente">&#10095;</button>
+                        <div class="slide-counter" id="slideCounter" aria-live="polite">1 / 5</div>
+                    </div>
+                    <a href="#" id="modalWhatsapp" class="btn" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-whatsapp" aria-hidden="true"></i> Consultar sobre este proyecto
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- SECCIÓN TESTIMONIOS -->
+        <section class="testimonios" aria-labelledby="testimonios-title">
+            <div class="container">
+                <h2 class="section-title" id="testimonios-title">Lo Que Dicen Nuestros Clientes</h2>
+                <div class="testimonios-slider" role="region" aria-label="Testimonios de clientes" aria-live="polite">
+                    <div class="testimonios-track" id="testimoniosTrack">
+                        <article class="testimonio">
+                            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" 
+                                 alt="Carlos Mendoza" 
+                                 class="testimonio-img" 
+                                 loading="lazy"
+                                 width="200" 
+                                 height="200"
+                                 decoding="async">
+                            <p>"Excelente trabajo en la construcción de nuestra planta industrial. Cumplieron con los tiempos y la calidad superó nuestras expectativas."</p>
+                            <h4>Carlos Mendoza</h4>
+                            <span>Industrias Mendoza C.A.</span>
+                        </article>
+                        <article class="testimonio">
+                            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" 
+                                 alt="María González" 
+                                 class="testimonio-img" 
+                                 loading="lazy"
+                                 width="200" 
+                                 height="200"
+                                 decoding="async">
+                            <p>"Profesionales responsables y creativos. El diseño de nuestro conjunto residencial quedó espectacular. Totalmente recomendados."</p>
+                            <h4>María González</h4>
+                            <span>Desarrollos Inmobiliarios del Sur</span>
+                        </article>
+                        <article class="testimonio">
+                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" 
+                                 alt="Roberto Silva" 
+                                 class="testimonio-img" 
+                                 loading="lazy"
+                                 width="200" 
+                                 height="200"
+                                 decoding="async">
+                            <p>"La remodelación de nuestras oficinas quedó perfecta. Atención al detalle y cumplimiento en cada etapa del proyecto."</p>
+                            <h4>Roberto Silva</h4>
+                            <span>Silva & Asociados</span>
+                        </article>
+                        <article class="testimonio">
+                            <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" 
+                                 alt="Ana Rodríguez" 
+                                 class="testimonio-img" 
+                                 loading="lazy"
+                                 width="200" 
+                                 height="200"
+                                 decoding="async">
+                            <p>"Construyeron nuestra casa soñada. Desde el diseño hasta la entrega final, todo fue impecable. Gracias Arca2."</p>
+                            <h4>Ana Rodríguez</h4>
+                            <span>Propietaria Particular</span>
+                        </article>
+                        <article class="testimonio">
+                            <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" 
+                                 alt="Luis Hernández" 
+                                 class="testimonio-img" 
+                                 loading="lazy"
+                                 width="200" 
+                                 height="200"
+                                 decoding="async">
+                            <p>"Excelente gestión en el proyecto de urbanización. Cumplimiento, seriedad y calidad garantizada. Los volvería a contratar."</p>
+                            <h4>Luis Hernández</h4>
+                            <span>Constructora Hernández</span>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN CONTACTO -->
+        <section class="contacto" id="contacto" aria-labelledby="contacto-title">
+            <div class="container">
+                <h2 class="section-title" id="contacto-title">Contáctanos</h2>
+                <div class="contacto-grid">
+                    <div class="contacto-info">
+                        <h3>Información de Contacto</h3>
+                        
+                        <div class="contacto-item">
+                            <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                            <div>
+                                <h4>Dirección</h4>
+                                <address>San Cristóbal, Estado Táchira, Venezuela</address>
+                            </div>
+                        </div>
+
+                        <div class="contacto-item">
+                            <i class="fab fa-whatsapp" aria-hidden="true"></i>
+                            <div>
+                                <h4>WhatsApp</h4>
+                                <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer">+1 234 567 890</a>
+                            </div>
+                        </div>
+
+                        <div class="contacto-item">
+                            <i class="fas fa-envelope" aria-hidden="true"></i>
+                            <div>
+                                <h4>Correo Electrónico</h4>
+                                <a href="mailto:arca2ca@gmail.com">arca2ca@gmail.com</a>
+                            </div>
+                        </div>
+
+                        <div class="contacto-item">
+                            <i class="fab fa-instagram" aria-hidden="true"></i>
+                            <div>
+                                <h4>Instagram</h4>
+                                <a href="https://instagram.com/arca2ca" target="_blank" rel="noopener noreferrer">@arca2ca</a>
+                            </div>
+                        </div>
+
+                        <div class="social-links" style="margin-top: 2rem;">
+                            <a href="https://instagram.com/arca2ca" target="_blank" rel="noopener noreferrer" class="instagram" aria-label="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="facebook" aria-label="Facebook">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="linkedin" aria-label="LinkedIn">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="#" class="youtube" aria-label="YouTube">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                            <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer" class="whatsapp" aria-label="WhatsApp">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="contacto-form">
+                        <form id="contactForm" onsubmit="handleSubmit(event)" novalidate>
+                            <div class="form-group">
+                                <label for="nombre">Nombre Completo <span aria-label="obligatorio">*</span></label>
+                                <input type="text" 
+                                       id="nombre" 
+                                       name="nombre" 
+                                       required 
+                                       autocomplete="name"
+                                       aria-required="true"
+                                       aria-describedby="nombre-error">
+                                <span class="error-message" id="nombre-error" role="alert">Por favor ingrese su Nombre Completo</span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Correo Electrónico <span aria-label="obligatorio">*</span></label>
+                                <input type="email" 
+                                       id="email" 
+                                       name="email" 
+                                       required 
+                                       autocomplete="email"
+                                       aria-required="true"
+                                       aria-describedby="email-error">
+                                <span class="error-message" id="email-error" role="alert">Por favor ingrese un Correo Electrónico válido</span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="telefono">Teléfono <span aria-label="obligatorio">*</span></label>
+                                <input type="tel" 
+                                       id="telefono" 
+                                       name="telefono" 
+                                       required 
+                                       autocomplete="tel"
+                                       aria-required="true"
+                                       aria-describedby="telefono-error">
+                                <span class="error-message" id="telefono-error" role="alert">Por favor ingrese un Teléfono válido</span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="tipo">Tipo de Solicitud <span aria-label="obligatorio">*</span></label>
+                                <select id="tipo" 
+                                        name="tipo" 
+                                        required
+                                        aria-required="true"
+                                        aria-describedby="tipo-error">
+                                    <option value="">Seleccione una opción</option>
+                                    <option value="pregunta">Pregunta General</option>
+                                    <option value="obras">Obras de Construcción</option>
+                                    <option value="disenos">Diseños Arquitectónicos</option>
+                                    <option value="tipo-obra">Tipo de Obra Específica</option>
+                                    <option value="cotizaciones">Cotizaciones</option>
+                                    <option value="otros">Otros</option>
+                                </select>
+                                <span class="error-message" id="tipo-error" role="alert">Por favor seleccione un Tipo de Solicitud</span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="comentario">Comentario <span aria-label="obligatorio">*</span></label>
+                                <textarea id="comentario" 
+                                          name="comentario" 
+                                          required
+                                          aria-required="true"
+                                          aria-describedby="comentario-error"></textarea>
+                                <span class="error-message" id="comentario-error" role="alert">Por favor ingrese su Comentario</span>
+                            </div>
+
+                            <button type="submit" class="btn" style="width: 100%;">
+                                <span id="btnText">Enviar Mensaje</span>
+                                <span id="btnLoading" class="loading" style="display: none;" aria-hidden="true"></span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER CON ONDAS SENOIDALES -->
+    <footer role="contentinfo">
+        <!-- Onda SVG decorativa superior del footer - Transición desde el contenido -->
+        <div class="footer-wave" aria-hidden="true">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" 
+                      class="shape-fill"></path>
+            </svg>
+        </div>
+        
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Arca2 C.A.</h3>
+                <p>Arquitectura y Construcción de excelencia en San Cristóbal, Edo. Táchira. Construyendo el futuro con calidad y compromiso.</p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Enlaces Rápidos</h3>
+                <ul>
+                    <li><a href="#inicio">Home</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#proyectos">Proyectos</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Síguenos</h3>
+                <p>Mantente conectado con nosotros en nuestras redes sociales</p>
+                <div class="social-links">
+                    <a href="https://instagram.com/arca2ca" target="_blank" rel="noopener noreferrer" class="instagram" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="facebook" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="linkedin" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" class="youtube" aria-label="YouTube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer" class="whatsapp" aria-label="WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; Arca2 C.A. 2026 - Todos los derechos reservados</p>
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT MODULAR Y OPTIMIZADO -->
+    <script>
+        /**
+         * DATOS DE PROYECTOS - Actualizados con imágenes corregidas
+         * Se usan imágenes de Unsplash con URLs verificadas y estables
+         * Cada proyecto tiene 5 imágenes para el slider del modal
+         */
+        const proyectos = [
+            {
+                id: 1,
+                titulo: "Conjunto Residencial Los Pinos",
+                descripcion: "Desarrollo urbano de 50 apartamentos con áreas comunes",
+                imagenes: [
+                    "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?ixlib=rb-4.0.3&w=800&q=80",
+                    "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-4.0.3&w=800&q=80",
+                    "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&w=800&q=80",
+                    "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&w=800&q=80",
+                    "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?ixlib=rb-4.0.3&w=800&q=80"
+                ],
+                whatsapp: "1234567890"
+            },
+            {
+                id: 2,
+                titulo: "Planta Industrial San José",
+                descripcion: "Nave industrial de 2000m² con oficinas administrativas",
+                imagenes: [
+                    "https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&w=800&q=80",
+                    "https://images.unsplash.com/photo-1565793298595-6a879b1d9492?ixlib=rb-4.0.3&w=800&q=80",
+                    "https://images.unsplash.com/photo-1581092160562-40aa08e78837?ixlib=rb-4.0.3&w=800&q=80",
+                    "https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?ixlib=rb-4.0.3&w=800&q=80",
+                    "https://images.unsplash.com/photo-1504307651254-35680f356dfd?ixlib=rb-4.0.3&w=800&q=80" // 5/5 - Planta Industrial San José corregida
+                ],
+                whatsapp: "1234567890"
+            },
+            {
+                id: 3,
+                titulo: "Centro Comercial Plaza Norte",
+                descripcion: "Remodelación y ampliación de centro comercial",
+                imagenes: [
+                    "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&w=800&q=80",
+                    "https://images.unsplash.com/photo-1441986300917-64674bd600d8?ixlib=rb-4.0.3&w=800&q=80",
+                    "https://images.unsplash.com/photo-1556742044-3c52d6e88c62?ixlib=rb-4.0.3&w=800&q=80",
+                    "https://images.unsplash.com/photo-1555529733-0e670560f7e1?ixlib=rb-4.0.3&w=800&q=80",
+                    "https://images.unsplash.com/photo-1566665797739-1674de7a421a?ixlib=rb-4.0.3&w=800&q=80"
+                ],
+                whatsapp: "1234567890"
+            },
+            {
+                id: 4,
+                titulo: "Vivienda Unifamiliar Moderna",
+                descripcion: "Casa de 350m² con diseño contemporáneo",
+                imagenes: [
+                    "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&w=800&q=80",
+                    "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&w=800&q=80",
+                    "https://images.unsplash.com/photo-1600566752355-35792bedcfea?ixlib=rb-4.0.3&w=800&q=80",
+                    "https://images.unsplash.com/photo-1600573472550-8090b5e0745e?ixlib=rb-4.0.3&w=800&q=80",
+                    "https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?ixlib=rb-4.0.3&w=800&q=80"
+                ],
+                whatsapp: "1234567890"
+            },
+            {
+                id: 5,
+                titulo: "Edificio de Oficinas Corporativas",
+                descripcion: "Torre de 8 pisos con estacionamiento subterráneo",
+                imagenes: [
+                    "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&w=800&q=80",
+                    "https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&w=800&q=80",
+                    "https://images.unsplash.com/photo-1497366811353-6870744d04b2?ixlib=rb-4.0.3&w=800&q=80",
+                    "https://images.unsplash.com/photo-1524758631624-e2822e304c36?ixlib=rb-4.0.3&w=800&q=80",
+                    "https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&w=800&q=80"
+                ],
+                whatsapp: "1234567890"
+            },
+            {
+                id: 6,
+                titulo: "Urbanización Villa Verde",
+                descripcion: "Desarrollo de 100 casas con vías y servicios",
+                imagenes: [
+                    "https://images.unsplash.com/photo-1600585154526-990dced4db0d?ixlib=rb-4.0.3&w=800&q=80",
+                    "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&w=800&q=80",
+                    "https://images.unsplash.com/photo-1600585154363-67eb9e2e2099?ixlib=rb-4.0.3&w=800&q=80",
+                    "https://images.unsplash.com/photo-1600047509358-9dc75507daeb?ixlib=rb-4.0.3&w=800&q=80",
+                    "https://images.unsplash.com/photo-1600210492493-0946911123ea?ixlib=rb-4.0.3&w=800&q=80"
+                ],
+                whatsapp: "1234567890"
+            }
+        ];
+
+        /**
+         * RENDERIZAR PROYECTOS
+         * Genera dinámicamente las tarjetas de proyectos en el grid
+         * Usa template literals para mejor legibilidad y performance
+         * Implementa lazy loading y atributos de accesibilidad
+         */
+        function renderProyectos() {
+            const grid = document.getElementById('proyectosGrid');
+            grid.innerHTML = proyectos.map(proyecto => `
+                <article class="proyecto-card" role="listitem">
+                    <div class="proyecto-img" onclick="openModal(${proyecto.id})" tabindex="0" role="button" aria-label="Ver detalles del proyecto ${proyecto.titulo}" onkeypress="handleKeyPress(event, ${proyecto.id})">
+                        <img src="${proyecto.imagenes[0]}" 
+                             alt="${proyecto.titulo}" 
+                             loading="lazy"
+                             width="400" 
+                             height="280"
+                             decoding="async">
+                        <div class="proyecto-overlay">
+                            <i class="fas fa-search-plus" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div class="proyecto-info">
+                        <h3>${proyecto.titulo}</h3>
+                        <p>${proyecto.descripcion}</p>
+                        <a href="https://wa.me/${proyecto.whatsapp}?text=Hola,%20me%20interesa%20el%20proyecto:%20${encodeURIComponent(proyecto.titulo)}" 
+                           class="whatsapp-link" 
+                           target="_blank" 
+                           rel="noopener noreferrer"
+                           aria-label="Consultar ${proyecto.titulo} por WhatsApp">
+                            <i class="fab fa-whatsapp" aria-hidden="true"></i> Consultar
+                        </a>
+                    </div>
+                </article>
+            `).join('');
+        }
+
+        /**
+         * MANEJO DE TECLADO PARA ACCESIBILIDAD
+         * Permite abrir el modal con Enter o Space en elementos focusable
+         * Cumple con WCAG 2.1 Level AA para navegación por teclado
+         */
+        function handleKeyPress(event, projectId) {
+            if (event.key === 'Enter' || event.key === ' ') {
+                event.preventDefault();
+                openModal(projectId);
+            }
+        }
+
+        // Variables de estado del modal
+        let currentSlide = 0;
+        let currentProject = null;
+        let lastFocusedElement = null;
+        let testimonioInterval = null;
+
+        /**
+         * ABRIR MODAL
+         * Inicializa el modal con los datos del proyecto seleccionado
+         * Implementa focus trap para accesibilidad (WCAG)
+         * Guarda el elemento enfocado para restaurarlo al cerrar
+         */
+        function openModal(projectId) {
+            currentProject = proyectos.find(p => p.id === projectId);
+            currentSlide = 0;
+            lastFocusedElement = document.activeElement;
+            
+            document.getElementById('modalTitle').textContent = currentProject.titulo;
+            document.getElementById('modalDesc').textContent = currentProject.descripcion;
+            document.getElementById('modalWhatsapp').href = `https://wa.me/${currentProject.whatsapp}?text=Hola,%20me%20interesa%20el%20proyecto:%20${encodeURIComponent(currentProject.titulo)}`;
+            
+            renderSlider();
+            const modal = document.getElementById('proyectoModal');
+            modal.style.display = 'flex';
+            modal.setAttribute('aria-hidden', 'false');
+            document.body.style.overflow = 'hidden';
+            
+            // Focus trap - Enfocar el botón de cerrar
+            const closeBtn = modal.querySelector('.modal-close');
+            closeBtn.focus();
+            
+            // Event listener para tecla Escape
+            modal.addEventListener('keydown', handleModalKeydown);
+        }
+
+        /**
+         * CERRAR MODAL
+         * Restaura el scroll del body y el foco al elemento anterior
+         * Remueve event listeners para evitar memory leaks
+         */
+        function closeModal() {
+            const modal = document.getElementById('proyectoModal');
+            modal.style.display = 'none';
+            modal.setAttribute('aria-hidden', 'true');
+            document.body.style.overflow = '';
+            modal.removeEventListener('keydown', handleModalKeydown);
+            
+            if (lastFocusedElement) {
+                lastFocusedElement.focus();
+            }
+        }
+
+        /**
+         * MANEJO DE TECLAS EN MODAL
+         * Cierra el modal con Escape
+         * Navegación por tabs con focus trap
+         */
+        function handleModalKeydown(e) {
+            if (e.key === 'Escape') {
+                closeModal();
+            }
+            
+            // Focus trap básico
+            if (e.key === 'Tab') {
+                const focusableElements = modal.querySelectorAll('button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])');
+                const firstFocusable = focusableElements[0];
+                const lastFocusable = focusableElements[focusableElements.length - 1];
+
+                if (e.shiftKey) {
+                    if (document.activeElement === firstFocusable) {
+                        lastFocusable.focus();
+                        e.preventDefault();
+                    }
+                } else {
+                    if (document.activeElement === lastFocusable) {
+                        firstFocusable.focus();
+                        e.preventDefault();
+                    }
+                }
+            }
+        }
+
+        /**
+         * RENDERIZAR SLIDER
+         * Genera las diapositivas del slider con lazy loading
+         * La primera imagen carga eager, las demás lazy
+         */
+        function renderSlider() {
+            const slider = document.getElementById('projectSlider');
+            slider.innerHTML = currentProject.imagenes.map((img, index) => `
+                <div class="slide" role="group" aria-roledescription="slide" aria-label="${index + 1} de ${currentProject.imagenes.length}">
+                    <img src="${img}" 
+                         alt="${currentProject.titulo} - Vista ${index + 1}" 
+                         loading="${index === 0 ? 'eager' : 'lazy'}"
+                         width="800" 
+                         height="450"
+                         decoding="async">
+                </div>
+            `).join('');
+            updateSlideCounter();
+        }
+
+        /**
+         * CAMBIAR SLIDE
+         * Navegación circular (infinita) del slider
+         * Actualiza el contador de imágenes
+         */
+        function changeSlide(direction) {
+            currentSlide += direction;
+            if (currentSlide < 0) currentSlide = currentProject.imagenes.length - 1;
+            if (currentSlide >= currentProject.imagenes.length) currentSlide = 0;
+            
+            const slider = document.getElementById('projectSlider');
+            slider.style.transform = `translateX(-${currentSlide * 100}%)`;
+            updateSlideCounter();
+        }
+
+        /**
+         * ACTUALIZAR CONTADOR
+         * Muestra la posición actual en el slider
+         * Usa aria-live para anunciar cambios a screen readers
+         */
+        function updateSlideCounter() {
+            document.getElementById('slideCounter').textContent = `${currentSlide + 1} / ${currentProject.imagenes.length}`;
+        }
+
+        // Cerrar modal al hacer click fuera
+        window.onclick = function(event) {
+            const modal = document.getElementById('proyectoModal');
+            if (event.target === modal) {
+                closeModal();
+            }
+        }
+
+        /**
+         * TESTIMONIOS SLIDER
+         * Rotación automática cada 5 segundos
+         * Se pausa al hacer hover para mejor UX
+         */
+        let testimonioIndex = 0;
+
+        function rotateTestimonios() {
+            const track = document.getElementById('testimoniosTrack');
+            testimonioIndex = (testimonioIndex + 1) % 5;
+            track.style.transform = `translateX(-${testimonioIndex * 100}%)`;
+        }
+
+        function startTestimoniosSlider() {
+            rotateTestimonios(); // Ejecutar inmediatamente
+            testimonioInterval = setInterval(rotateTestimonios, 5000);
+        }
+
+        function stopTestimoniosSlider() {
+            clearInterval(testimonioInterval);
+        }
+
+        // Pausar slider al hacer hover
+        document.querySelector('.testimonios-slider')?.addEventListener('mouseenter', stopTestimoniosSlider);
+        document.querySelector('.testimonios-slider')?.addEventListener('mouseleave', startTestimoniosSlider);
+
+        /**
+         * MENÚ MÓVIL
+         * Toggle del menú hamburger con animación
+         * Actualiza atributos ARIA para accesibilidad
+         */
+        function toggleMenu() {
+            const nav = document.getElementById('navMenu');
+            const toggle = document.querySelector('.menu-toggle');
+            const isExpanded = toggle.getAttribute('aria-expanded') === 'true';
+            
+            nav.classList.toggle('active');
+            toggle.classList.toggle('active');
+            toggle.setAttribute('aria-expanded', !isExpanded);
+        }
+
+        // Cerrar menú al hacer click en un link
+        document.querySelectorAll('nav a').forEach(link => {
+            link.addEventListener('click', () => {
+                const nav = document.getElementById('navMenu');
+                const toggle = document.querySelector('.menu-toggle');
+                nav.classList.remove('active');
+                toggle.classList.remove('active');
+                toggle.setAttribute('aria-expanded', 'false');
+            });
+        });
+
+        /**
+         * HEADER SCROLL EFFECT
+         * Cambia la sombra del header al hacer scroll
+         * Usa passive listener para mejor performance
+         */
+        window.addEventListener('scroll', () => {
+            const header = document.getElementById('header');
+            if (window.scrollY > 100) {
+                header.style.boxShadow = '0 4px 20px rgba(0,0,0,0.15)';
+            } else {
+                header.style.boxShadow = '0 2px 10px rgba(0,0,0,0.1)';
+            }
+        }, { passive: true });
+
+        /**
+         * NAVEGACIÓN ACTIVA
+         * Resalta el link del menú según la sección visible
+         * Usa Intersection Observer para mejor performance
+         */
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        const observerOptions = {
+            root: null,
+            rootMargin: '-20% 0px -80% 0px',
+            threshold: 0
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const id = entry.target.getAttribute('id');
+                    navLinks.forEach(link => {
+                        link.classList.remove('active');
+                        if (link.getAttribute('href') === `#${id}`) {
+                            link.classList.add('active');
+                        }
+                    });
+                }
+            });
+        }, observerOptions);
+
+        sections.forEach(section => observer.observe(section));
+
+        /**
+         * VALIDACIÓN DE FORMULARIO
+         * Validación en tiempo real con mensajes personalizados
+         * Muestra el nombre del campo en cada mensaje de error
+         * Cumple con estándares de accesibilidad ARIA
+         */
+        const validationRules = {
+            nombre: {
+                validate: (value) => value.trim().length >= 3,
+                message: 'Por favor ingrese su Nombre Completo'
+            },
+            email: {
+                validate: (value) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value),
+                message: 'Por favor ingrese un Correo Electrónico válido'
+            },
+            telefono: {
+                validate: (value) => /^[\d\s\-\+\(\)]{10,}$/.test(value),
+                message: 'Por favor ingrese un Teléfono válido'
+            },
+            tipo: {
+                validate: (value) => value.trim() !== '',
+                message: 'Por favor seleccione un Tipo de Solicitud'
+            },
+            comentario: {
+                validate: (value) => value.trim().length >= 10,
+                message: 'Por favor ingrese su Comentario'
+            }
+        };
+
+        /**
+         * VALIDAR CAMPO INDIVIDUAL
+         * Valida un campo específico y muestra/oculta error
+         * Retorna boolean para validación completa
+         */
+        function validateField(fieldName) {
+            const field = document.getElementById(fieldName);
+            const value = field.value;
+            const rule = validationRules[fieldName];
+            const isValid = rule.validate(value);
+            const formGroup = field.closest('.form-group');
+            
+            if (!isValid) {
+                formGroup.classList.add('error');
+            } else {
+                formGroup.classList.remove('error');
+            }
+            
+            return isValid;
+        }
+
+        /**
+         * VALIDAR FORMULARIO COMPLETO
+         * Valida todos los campos y retorna estado general
+         * Enfoca el primer campo con error si existe
+         */
+        function validateForm() {
+            let isValid = true;
+            const fields = Object.keys(validationRules);
+            
+            fields.forEach(fieldName => {
+                if (!validateField(fieldName)) {
+                    isValid = false;
+                }
+            });
+
+            return isValid;
+        }
+
+        /**
+         * MANEJO DE ENVÍO DE FORMULARIO
+         * Previene submit default, valida y simula envío
+         * Muestra loading state y mensaje de éxito
+         */
+        function handleSubmit(e) {
+            e.preventDefault();
+            
+            if (!validateForm()) {
+                // Focus en el primer campo con error
+                const firstError = document.querySelector('.form-group.error input, .form-group.error select, .form-group.error textarea');
+                if (firstError) {
+                    firstError.focus();
+                }
+                return;
+            }
+
+            const btnText = document.getElementById('btnText');
+            const btnLoading = document.getElementById('btnLoading');
+            const form = document.getElementById('contactForm');
+            
+            btnText.style.display = 'none';
+            btnLoading.style.display = 'inline-block';
+
+            // Simular envío (en producción usar Formspree o backend real)
+            setTimeout(() => {
+                alert('¡Mensaje enviado con éxito! Nos pondremos en contacto contigo pronto.');
+                form.reset();
+                document.querySelectorAll('.form-group').forEach(group => {
+                    group.classList.remove('error');
+                });
+                btnText.style.display = 'inline';
+                btnLoading.style.display = 'none';
+            }, 2000);
+        }
+
+        // Remover errores al escribir - Validación en tiempo real
+        document.querySelectorAll('input, select, textarea').forEach(input => {
+            input.addEventListener('input', function() {
+                this.closest('.form-group').classList.remove('error');
+            });
+        });
+
+        /**
+         * INTERSECTION OBSERVER PARA ANIMACIONES
+         * Anima elementos al entrar en viewport
+         * Mejor performance que scroll events
+         */
+        const animateObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                    animateObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 });
+
+        /**
+         * INICIALIZACIÓN
+         * Se ejecuta cuando el DOM está listo
+         * Renderiza proyectos, inicia sliders y observa elementos
+         */
+        document.addEventListener('DOMContentLoaded', () => {
+            renderProyectos();
+            startTestimoniosSlider();
+            
+            // Animar elementos al hacer scroll
+            document.querySelectorAll('.servicio-card, .proyecto-card, .stat-item').forEach(el => {
+                el.style.opacity = '0';
+                el.style.transform = 'translateY(20px)';
+                el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                animateObserver.observe(el);
+            });
+        });
+
+        /**
+         * MANEJO DE ERRORES DE IMÁGENES
+         * Reemplaza imágenes rotas con placeholder
+         * Loguea errores en consola para debugging
+         */
+        document.addEventListener('error', function(e) {
+            if (e.target.tagName === 'IMG') {
+                e.target.src = 'https://via.placeholder.com/800x600/4A90E2/FFFFFF?text=Arca2+Construccion';
+                console.warn('Imagen no cargada:', e.target.src);
+            }
+        }, true);
+
+        /**
+         * PRELOAD DE IMÁGENES CRÍTICAS
+         * Precarga el logo y hero image para mejor LCP
+         * Mejora Core Web Vitals
+         */
+        function preloadCriticalImages() {
+            const criticalImages = [
+                'img/LogoArca2ca.png',
+                'https://images.unsplash.com/photo-1504307651254-35680f356dfd?ixlib=rb-4.0.3&w=1920&q=80'
+            ];
+            
+            criticalImages.forEach(src => {
+                const img = new Image();
+                img.src = src;
+            });
+        }
+
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', preloadCriticalImages);
+        } else {
+            preloadCriticalImages();
+        }
+
+        /**
+         * SERVICE WORKER READY
+         * Preparado para implementar PWA cuando sea necesario
+         * Descomentar cuando tengas un sw.js configurado
+         */
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                // navigator.serviceWorker.register('/sw.js')
+                //     .then(registration => console.log('SW registered:', registration))
+                //     .catch(error => console.log('SW registration failed:', error));
+            });
+        }
+    </script>
+</body>
+</html>
